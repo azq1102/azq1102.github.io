@@ -1,0 +1,352 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title>網頁遊戲</title>
+<script>
+//遊戲滑動
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+	  if (this.hash == "#section2" || this.hash == "#section3" || this.hash == "#section4") {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function () {
+            window.location.hash = hash;
+        });
+      }
+      if (this.hash == "#section7") {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 2000, function () {
+            window.location.hash = hash;
+        });
+      }
+	  if (this.hash == "#section1") {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1, function () {
+            window.location.hash = hash;
+        });
+      }
+    } 
+  });
+});	
+</script>
+	
+<style>
+/*15吋筆電*/
+@media (max-width: 1550px) and (min-width: 1401px){
+	body{overflow-x: hidden;
+		 overflow-y: hidden;
+	     background-color: #eaebef;}
+	
+	div.Zero{width:99%;
+	       height:800px;
+	       position:absolute;
+	       margin-left:0px;
+	       margin-top:0px;}
+	
+	#An1{width: 100%;
+	     height:700px;
+	     position:absolute;
+	     margin-left: 0%;
+	     margin-top: 0%;}
+	
+	div.Q1{width:34%;
+	       position:absolute;
+	       margin-left: 35%;
+	       margin-top: 25%;}
+	
+	#A1{width:30%;
+	    position:absolute;
+	    left: 6%;
+		top: 50%;}
+	
+	#A2{width:30%;
+	    position:absolute;
+	    left: 44%;
+		top: 50%;}
+	
+	div.First{width:100%;
+		      height:800px;
+		      position:absolute;
+		      left:0px;
+		      top:800px;}
+
+	div.Q2{width:80%;
+	       height:70%;
+	       position:absolute;
+	       left:10%;
+	       top:10%;
+	       background-color: white;
+		   border-radius: 5%;
+		   border: 5px solid #C0D6DF;}
+	
+	p.Q{font-size:36px;
+	    color:#A7A7A7;
+	    position:absolute;
+	    left:3%;}
+	
+	div.A34{width:80%;
+	        height:80%;
+	        positon:absolute;
+	        left:10%;
+	        top:20%;}
+	
+	#A3{width: 80%;
+	    position:absolute;
+	    left:3%;
+	    top:30%;}
+	
+	#A4{width: 80%;
+	    position:absolute;
+	    left:3%;
+	    top:60%}
+	
+	div.Second{width:100%;
+		       height:800px;
+		       position:absolute;
+		       left:0px;
+		       top:1600px;}
+	
+	#C1{width: 100%;
+		height: 730px;}
+	
+	#B1{width: 100%;
+		height:730px;
+		position:absolute;
+	    left:0%;
+		top:0%;}
+	
+	div.Third{width:100%;
+		      height:800px;
+		      position:absolute;
+		      left:0px;
+		      top:2400px;}
+	
+	#W1{width: 100%;
+		height: 730px;}
+	
+	#B2{width: 100%;
+		height:730px;
+		position:absolute;
+	    left:0%;
+		top:0%;}
+	
+	#B3{width: 100%;
+		height:730px;
+		position:absolute;
+	    left:0%;
+		top:0%;}
+	
+	#T1{width: 100%;
+	    height:700px;}
+	}
+	
+/*平板?*/
+@media (max-width: 1024px) and (min-width: 750px){
+	body{overflow-x: hidden;
+		 background-color: #eaebef;}
+	
+	div.Zero{width:99%;
+	         height:730px;
+	         position:absolute;
+	         margin-left:0px;
+	         margin-top:0px;}
+	
+	#An1{width: 100%;
+	     height:65%;
+	     position:absolute;
+	     margin-left: 0%;
+	     margin-top: 0%;}
+	
+	div.Q1{width:34%;
+	       position:absolute;
+	       margin-left: 35%;
+	       margin-top: 25%;}
+	
+	#A1{width:30%;
+	    position:absolute;
+	    left: 6%;
+		top: 50%;}
+	
+	#A2{width:30%;
+	    position:absolute;
+	    left: 44%;
+		top: 50%;}
+	
+	div.First{width:100%;
+		      height:730px;
+		      position:absolute;
+		      left:0px;
+		      top:730px;}
+
+	div.Q2{width:80%;
+	       height:70%;
+	       position:absolute;
+	       left:10%;
+	       top:8%;
+	       background-color: white;
+		   border-radius: 5%;
+		   border: 5px solid #C0D6DF;}
+	
+	p.Q{font-size:36px;
+	    color:#A7A7A7;
+	    position:absolute;
+	    left:3%;}
+	
+	div.A34{width:80%;
+	        height:80%;
+	        positon:absolute;
+	        left:10%;
+	        top:20%;}
+	
+	#A3{width: 100%;
+	    position:absolute;
+	    left:3%;
+	    top:30%;}
+	
+	#A4{width: 100%;
+	    position:absolute;
+	    left:3%;
+	    top:60%}
+	
+	div.Second{width:100%;
+		       height:730px;
+		       position:absolute;
+		       left:0px;
+		       top:1460px;}
+	
+	#C1{width: 100%;
+		height: 60%;}
+	
+	#B1{width: 80%;
+		position:absolute;
+	    left:10%;
+		top:5%;}
+	
+	div.Third{width:100%;
+		      height:730px;
+		      position:absolute;
+		      left:0px;
+		      top:2190px;}
+	
+	#W1{width: 100%;
+		height: 65%;
+	    position:absolute;
+	    top:10%;}
+	
+	#B2{width: 80%;
+		position:absolute;
+	    left:10%;
+		top:25%;}
+	
+	#B3{width: 80%;
+		position:absolute;
+	    left:10%;
+		top:5%;}
+	
+	#T1{width: 100%;
+	    height:65%;}
+	}
+</style>
+</head>
+
+<body>
+    <!--最上方の透明區塊-->
+	<div class="Zero" id="section0">
+	<img src="animation.gif" alt="Animation" id="An1">
+		
+	<!--真相-->
+		<div class="Forth" id="section1">
+			<a href="#section0">
+				<img alt="button" src="Button3.png" id="B3" onClick="window.location.reload()">
+			</a>
+			<img src="Truth.gif" alt="truth" id="T1">
+			<script type="text/javascript">
+                var Bb3 = document.getElementById("B3")
+				var Tt1 = document.getElementById("T1")
+                Bb3.style.display = "none";
+				Tt1.style.display = "none";
+				function Answer3() {
+                    Bb3.style.display = "block";
+					Tt1.style.display = "block";
+				}
+			</script>
+		</div>
+
+		
+		
+		<!--略過或參與的選項-->
+	    <div class="Q1" id="START"><img src="Question1.png" alt="Question" width="80% ">
+		     <a href="#section3"><img alt="ignore" src="Answer1.png" id="A1"  onClick="Answer1()">
+			 </a>
+			 <a href="#section2"><img alt="like" src="Answer2.png" id="A2">
+			 </a>
+		</div>
+		     <script type="text/javascript">
+             var Start = document.getElementById("START");
+             Start.style.display = "none";
+             setTimeout(myFunction, 10000)
+             function myFunction() {
+             Start.style.display = "block";
+             }
+		     function myFunction2(){
+		     Start.style.display = "none";
+	       	 }
+             </script>
+	</div>
+	
+	<!--選擇留言-->
+	<div class="First" id="section2">
+		<div class="Q2"><p class="Q">請選擇您偏好的留言內容。</p>
+			<div class="A34">
+		    <a href="#section3"><img alt="comment" src="comment1.png" id="A3" onClick="Answer1()">
+			</a>
+			<a href="#section3"><img alt="like" src="comment2.png" id="A4" onClick="Answer1()">
+			</a>
+			</div>
+		</div>
+	</div>
+	
+	<!--惡意留言影片-->
+	<div class="Second" id="section3">
+		<a href="#section4"><img alt="Button" src="Button1.png" id="B1" onClick="Answer2()">
+		</a>
+		<script type="text/javascript">
+        var Bb1 = document.getElementById("B1")
+        Bb1.style.display = "none";
+        function Answer1() {
+        setTimeout("block()", 5500);
+        }
+        function block() {
+        Bb1.style.display = "block";
+        }
+        </script>
+		<img src="comment.gif" alt="Comment" id="C1">
+	</div>
+	
+	<!--遊戲結果:天氣圖-->
+	<div class="Third" id="section4">
+		<img src="Weather.gif" alt="Weather" id="W1">
+		<a href="#section1"><img alt="Button" src="Button2.png" id="B2" onclick="Answer3()">
+		</a>
+		<script type="text/javascript">
+        var Bb2 = document.getElementById("B2")
+        Bb2.style.display = "none";
+        function Answer2() {
+        setTimeout("block1()", 15500);
+        }
+        function block1() {
+        Bb2.style.display = "block";
+        }
+        </script>
+	</div>
+	
+</body>
+</html>
